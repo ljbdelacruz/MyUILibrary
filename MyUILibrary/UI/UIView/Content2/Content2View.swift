@@ -8,6 +8,10 @@
 
 import UIKit
 
+public protocol Content2ViewProto{
+    func invokeClick(url:String);
+}
+
 public class Content2View: UIView {
     public var fontSize:CGFloat=14.0;
     public var fontColor:String="#7030A0";
@@ -27,7 +31,9 @@ public class Content2View: UIView {
         return NSAttributedString(string: data, attributes: attrs)
     }
     public var url:String="";
-    public func setupWeb(url:String){
+    public var view:Content2ViewProto?;
+    public func setupWeb(url:String, view:Content2ViewProto){
+        self.view=view;
         self.url=url;
         self.myurl.attributedText?=self.setAttributeString(data: url)
         let tap = UITapGestureRecognizer(target: self, action: #selector(Content2View.navigateURL))
@@ -38,9 +44,7 @@ public class Content2View: UIView {
     @objc
     func navigateURL(sender:UITapGestureRecognizer){
         //invoke function custom here
-//        if let url = URL(string: self.url) {
-//            UIApplication.shared.openURL(url);
-//        }
+        self.view?.invokeClick(url: url);
     }
     
 
