@@ -1,5 +1,5 @@
 //
-//  CustomCell2TableViewCell.swift
+//  Cell3TableViewCell.swift
 //  MyUILibrary
 //
 //  Created by Lainel John Dela Cruz on 12/05/2019.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class CustomCell2TableViewCell: UITableViewCell {
+class Cell3TableViewCell: UITableViewCell {
     public static let identifier:String="CustomCell2";
     public static let nibName:String="CustomCell2"
     
-    @IBOutlet weak var myimage: UIImageView!
-    @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var mySubDesc: UILabel!
+    @IBOutlet weak var mylabel: UILabel!
+    @IBOutlet weak var myimage: UIButton!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
