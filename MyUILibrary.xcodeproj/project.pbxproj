@@ -19,6 +19,7 @@
 		EEAE3F20228983FA00D8170D /* Content1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3F1F228983FA00D8170D /* Content1View.swift */; };
 		EEAE3F2322898B6600D8170D /* Content2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3F2222898B6600D8170D /* Content2.xib */; };
 		EEAE3F2522898CE700D8170D /* Content2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3F2422898CE700D8170D /* Content2View.swift */; };
+		EEAE3F2A228990B000D8170D /* UiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3F29228990B000D8170D /* UiUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EEAE3F1F228983FA00D8170D /* Content1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content1View.swift; sourceTree = "<group>"; };
 		EEAE3F2222898B6600D8170D /* Content2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content2.xib; sourceTree = "<group>"; };
 		EEAE3F2422898CE700D8170D /* Content2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content2View.swift; sourceTree = "<group>"; };
+		EEAE3F29228990B000D8170D /* UiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		EEAE3F042287CBCA00D8170D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE3F282289909600D8170D /* Tools */,
 				EEAE3F1B2289831A00D8170D /* UIView */,
 				EEAE3F052287CBD000D8170D /* TableView */,
 			);
@@ -163,6 +166,14 @@
 				EEAE3F2422898CE700D8170D /* Content2View.swift */,
 			);
 			path = Content2;
+			sourceTree = "<group>";
+		};
+		EEAE3F282289909600D8170D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3F29228990B000D8170D /* UiUtil.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAE3F20228983FA00D8170D /* Content1View.swift in Sources */,
+				EEAE3F2A228990B000D8170D /* UiUtil.swift in Sources */,
 				EEAE3F172287F14700D8170D /* Cell3TableViewCell.swift in Sources */,
 				EEAE3F2522898CE700D8170D /* Content2View.swift in Sources */,
 				EEAE3F0B2287CD8E00D8170D /* Cell1TableViewCell.swift in Sources */,
